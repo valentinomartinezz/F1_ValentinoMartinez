@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+}
+/* -----------------------Header general--------------------------------------- */
+
+header{
+   height: 150px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(226, 2, 2);
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+
+header div img{
+    height: 145px;
+    width: 145px;
+}
+
+header .logo{
+    background-color: rgb(226, 2, 2);
+}
+
+header nav{
+    background-color: rgb(226, 2, 2);
+    flex-grow: 0.6;
+}
+
+header nav ul li{
+    border-top: 2px groove gray;
+    border-width: 3px;
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 5px 0px 0px 55px;
+    width: 200px;
+    height: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all .5s ease-in-out;
+}
+
+header nav ul li#escuderias:hover{
+    background-image: url('../fotos/auto.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: (1.1);
+    border-top: 2px groove black;
+    margin: 10px 10px;
+    padding: 5px 0px 0px 55px;
+    width: 200px;
+    height: 25px;
+    box-shadow: 0 0 20px rgba(66, 66, 66, 0.568);
+}
+header nav ul li#circuitos:hover{
+    background-image: url('../fotos/circuito.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: (5);
+    border-top: 2px groove black;
+    margin: 10px 10px;
+    padding: 5px 0px 0px 55px;
+    width: 200px;
+    height: 25px;
+    box-shadow: 0 0 20px rgba(66, 66, 66, 0.568);
+}
+header nav ul li#ranking:hover{
+    background-image: url('../fotos/pilotos.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: (5);
+    border-top: 2px groove black;
+    margin: 10px 10px;
+    padding: 5px 0px 0px 55px;
+    width: 200px;
+    height: 25px;
+    box-shadow: 0 0 20px rgba(66, 66, 66, 0.568);
+}
+header nav ul li#home:hover{
+    background-image: url('../fotos/pit.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    transform: (5);
+    border-top: 2px groove black;
+    margin: 10px 10px;
+    padding: 5px 0px 0px 55px;
+    width: 200px;
+    height: 25px;
+    box-shadow: 0 0 20px rgba(66, 66, 66, 0.568);
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* ------------------FOOTER general-------------------------------------------- */
+footer{
+
+   height: 7.5rem;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(10, 10, 10);
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+div .redes{
+    display: inline-block;
+    background-color: rgb(51, 51, 51);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 19px;
+    margin-bottom: 10px;
+    transition: all .2s ease-in-out;
+}
+#instagram{
+    margin-right: 15px;
+}
+#twitch{
+    margin-left: 15px;
+}
+#instagram:hover{
+    background-color: brown;
+    box-shadow: 0 0 20px rgba(167, 6, 6, 0.5);
+}
+#twitter:hover{
+    background-color: rgb(165, 163, 42);
+    box-shadow: 0 0 20px rgba(167, 156, 6, 0.5);
+}
+#twitch:hover{
+    background-color: rgb(52, 165, 42);
+    box-shadow: 0 0 20px rgba(52, 167, 6, 0.5);
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* ----------INDEX--------------------------------------------------------------- */
+
+/* ---------------------Main------------------------------------------------------ */
+
+.home__image{
+    background-image: url("../fotos/home_imagen.jpg");
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(50%) brightness(90%);
+}
+section.home__image h1{
+    left: 0;
+    font-size: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.555);
+    padding: 1rem 0;
+    width: 100%;
+    text-align: left;
+}
+
+
+section h3{
+    grid-area: titulo;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.info#info__duro{
+    position: relative;
+    color: black;
+    margin-top: 50px;
+    padding-left: 5px;
+    height: 190px;
+    background-color: white;
+    z-index: 10;
+}
+
+#duro{
+    grid-area: duro;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 35px;
+    border-radius: 3%;
+    z-index: 10;
+}
+
+.info#info__medio{
+    color: black;
+    margin-top: 50px;
+    padding-left: 5px;
+    height: 190px;
+    background-color: rgb(255, 230, 5);
+    z-index: 9;
+}
+
+#medio{
+    grid-area: medio;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 35px;
+    border-radius: 3%;
+    z-index: 9;
+}
+
+.info#info__blando{
+    color: black;
+    margin-top: 50px;
+    padding-left: 5px;
+    height: 190px;
+    background-color: rgb(233, 0, 0);
+    z-index: 8;
+}
+
+#blando{
+    grid-area: blando;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 35px;
+    border-radius: 3%;
+    z-index: 8;
+}
+
+.info#info__inter{
+    color: black;
+    margin-top: 50px;
+    padding-left: 5px;
+    height: 190px;
+    background-color: rgb(0, 219, 11);
+    z-index: 7;
+}
+#inter{
+    grid-area: intermedio;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 35px;
+    border-radius: 3%;
+    z-index: 7;
+}
+.info#info__lluvia{
+    color: black;
+    margin-top: 50px;
+    padding-left: 5px;
+    height: 190px;
+    background-color: rgb(0, 17, 255);
+    z-index: 6;
+}
+#lluvia{
+    grid-area: lluvia;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 35px;
+    border-radius: 3%;
+    z-index: 6;
+}
+
+.info#info__nada{
+    height: 5px;
+    color: black;
+    margin-top: -5px;
+    margin-left: 440px;
+    padding-left: 5px;
+    height: 190px;
+    background-color: rgba(0, 17, 255, 0);
+    z-index: 1;
+}
+
+section.home__info{
+    margin: 1rem ;
+    color: white;
+    padding: 4rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-areas: 
+    "titulo"
+    "duro"
+    "medio"
+    "blando"
+    "intermedio"
+    "lluvia";
+    row-gap: 15px;
+}
+section.home__info h3{
+    color: rgb(199, 199, 199);
+}
+
+section.home__info .neumaticos {
+    background-color: rgb(22, 22, 22);
+}
+
+
+@media (min-width: 660px) {
+    .home__image{
+        height: 80vh;
+    }
+
+    section.home__image h1{
+        font-size: 4rem;
+    }
+
+    section h3{
+        font-size: 35px;
+    }
+    
+    .info#info__duro{
+        position: relative;
+        display: none;
+        color: black;
+        margin-top: 50px;
+        padding-left: 5px;
+        height: 190px;
+        width: 160px;
+        background-color: white;
+        z-index: 10;
+    }
+    
+    #duro{
+        grid-area: duro;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 35px;
+        border-radius: 3%;
+        z-index: 10;
+    }
+    
+    .info#info__medio{
+        display: none;
+        color: black;
+        margin-top: 50px;
+        padding-left: 5px;
+        height: 190px;
+        width: 160px;
+        background-color: rgb(255, 230, 5);
+        z-index: 9;
+    }
+    
+    #medio{
+        grid-area: medio;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 35px;
+        border-radius: 3%;
+        z-index: 9;
+    }
+    
+    .info#info__blando{
+        display: none;
+        color: black;
+        margin-top: 50px;
+        padding-left: 5px;
+        height: 190px;
+        width: 160px;
+        background-color: rgb(233, 0, 0);
+        z-index: 8;
+    }
+    
+    #blando{
+        grid-area: blando;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 35px;
+        border-radius: 3%;
+        z-index: 8;
+    }
+    
+    .info#info__inter{
+        display: none;
+        color: black;
+        margin-top: 50px;
+        padding-left: 5px;
+        height: 190px;
+        width: 160px;
+        background-color: rgb(0, 219, 11);
+        z-index: 7;
+    }
+    #inter{
+        grid-area: intermedio;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 35px;
+        border-radius: 3%;
+        z-index: 7;
+    }
+    .info#info__lluvia{
+        display: none;
+        color: black;
+        margin-top: 50px;
+        padding-left: 5px;
+        height: 190px;
+        width: 160px;
+        background-color: rgb(0, 17, 255);
+        z-index: 6;
+    }
+    #lluvia{
+        grid-area: lluvia;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 35px;
+        border-radius: 3%;
+        z-index: 6;
+    }
+    
+    .info#info__nada{
+        color: black;
+        margin-top: -5px;
+        margin-left: 440px;
+        padding-left: 5px;
+        height: 190px;
+        width: 160px;
+        background-color: rgba(0, 17, 255, 0);
+        z-index: 1;
+    }
+
+    section.home__info{
+        grid-template-rows: 50px 100px;
+        grid-template-columns: repeat(5, 100px);
+        grid-template-areas: 
+        "titulo titulo titulo titulo titulo"
+        "duro medio blando intermedio lluvia"
+        ;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    section.home__info h3{
+        color: rgb(199, 199, 199);
+    }
+    
+    section.home__info .neumaticos {
+        background-color: rgb(22, 22, 22);
+    }
+
+    #duro:hover{
+        background-color: white;
+        height: 110px;
+        color: black;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    #duro:hover > #info__duro{
+        display: inline-block;
+    }
+    
+    #medio:hover{
+        background-color: rgb(255, 230, 5);
+        height: 110px;
+        color: black;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    #medio:hover > #info__medio{
+        display: inline-block;
+    }
+    
+    #blando:hover{
+        background-color: rgb(233, 0, 0);
+        height: 110px;
+        color: black;
+        border-bottom-left-radius: 0;
+    }
+    #blando:hover > #info__blando{
+        display: inline-block;
+    }
+    
+    #inter:hover{
+        background-color: rgb(0, 219, 11);
+        height: 110px;
+        color: black;
+        border-bottom-left-radius: 0;
+    }
+    #inter:hover > #info__inter{
+        display: inline-block;
+    }
+    #lluvia:hover{
+        background-color: rgb(0, 17, 255);
+        height: 110px;
+        color: black;
+        border-bottom-left-radius: 0;
+    }
+    #lluvia:hover > #info__lluvia{
+        display: inline-block;
+    }
+}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* -----------------CIRCUITOS--------------------------------------------- */
+
+/* -----------------MAIN ------------------------------------------------- */
+#circuitos__main{
+    padding: 1rem 0 0 0;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 3rem auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+section.main__contaner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.circuito{
+    color: white;
+    border: 1px solid rgb(206, 30, 30);
+    box-shadow: 0 0 20px rgba(27, 27, 27, 0.568);
+    width: 300px;
+    display: flex;
+    height: 200px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 4%;
+    background-color: rgba(27, 27, 27, 0.568);
+}
+@media  (min-width: 667px){
+    #circuitos__main{
+        width: 70%;
+        row-gap: 15px;
+    }
+    .circuito{
+        width: 400px;
+        display: flex;
+        height: 300px;
+        font-size: 25px;
+    }    
+}
+
+/* -------------------ESCUDERIAS-------------------------------------------- */
+
+/* -------------------Main--------------------------------------------------*/
+
+
+.accordion-item{
+    border: 1px solid rgb(99, 25, 25);
+    margin-bottom: 1rem;
+    background-color: rgb(172, 171, 171);
+}
+
+.accordion-button:not(.collapsed)::after{
+    filter: brightness(0%) invert(70%); 
+}
+
+/* -----------------------Ranking----------------------------------------- */
+
+/* -----------------------MAIN--------------------------------------------- */
+
+section ol{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.piloto{
+    background-color: rgb(48, 48, 48);
+    color: aliceblue;
+    border: 2px ridge rgb(148, 17, 17);
+    transition: all .2s ease-in-out;
+}
+
+li#p1:hover{
+    background-color: rgb(206, 26, 26);
+    color: rgb(24, 24, 24);
+}
+li#p2:hover{
+    background-color: rgb(206, 26, 26);
+    color: rgb(24, 24, 24);
+}
+li#p3:hover{
+    background-color: rgb(73, 207, 162);
+    color: rgb(24, 24, 24);
+}
+li#p4:hover{
+    background-color: rgb(73, 207, 162);
+    color: rgb(24, 24, 24);
+}
+li#p5:hover{
+    background-color: rgb(223, 223, 223);
+    color: rgb(24, 24, 24);
+}
+li#p6:hover{
+    background-color: rgb(133, 5, 33);
+    color: rgb(24, 24, 24);
+}
+li#p7:hover{
+    background-color: rgb(239, 173, 241);;
+    color: rgb(24, 24, 24);
+}
+li#p8:hover{
+    background-color: rgb(25, 28, 66);
+    color: rgb(24, 24, 24);
+}
+li#p9:hover{
+    background-color: rgb(239, 173, 241);
+    color: rgb(24, 24, 24);
+}
+li#p10:hover{
+    background-color: rgb(133, 5, 33);
+    color: rgb(24, 24, 24);
+}
+/* ------------------------------------------------------------------------------------------- */
