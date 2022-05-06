@@ -1,0 +1,53 @@
+/* -----------------------Ranking----------------------------------------- */
+/* -----------------------MAIN-------------------------------------------- */
+section ol{
+    font-size: 20px;
+    font-weight: bold;
+    li.piloto{
+        background-color: rgb(48, 48, 48);
+        color: aliceblue;
+        border: 2px ridge rgb(148, 17, 17);
+        transition: all .2s ease-in-out;
+        &#p1:hover{
+            background-color: rgb(206, 26, 26);
+            color: rgb(24, 24, 24);
+        }
+        &#p2:hover{
+            background-color: rgb(206, 26, 26);
+            color: rgb(24, 24, 24);
+        }
+        &#p3:hover{
+            background-color: rgb(73, 207, 162);
+            color: rgb(24, 24, 24);
+        }
+        &#p4:hover{
+            background-color: rgb(73, 207, 162);
+            color: rgb(24, 24, 24);
+        }
+        &#p5:hover{
+            background-color: rgb(223, 223, 223);
+            color: rgb(24, 24, 24);
+        }
+        &#p6:hover{
+            background-color: rgb(133, 5, 33);
+            color: rgb(24, 24, 24);
+        }
+        &#p7:hover{
+            background-color: rgb(239, 173, 241);;
+            color: rgb(24, 24, 24);
+        }
+        &#p8:hover{
+            background-color: rgb(25, 28, 66);
+            color: rgb(24, 24, 24);
+        }
+        &#p9:hover{
+            background-color: rgb(239, 173, 241);
+            color: rgb(24, 24, 24);
+        }
+        &#p10:hover{
+            background-color: rgb(133, 5, 33);
+            color: rgb(24, 24, 24);
+        }
+    }
+}
+/* ------------------------------------------------------------------------------------------- */

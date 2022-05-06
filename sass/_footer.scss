@@ -1,0 +1,39 @@
+/* ------------------FOOTER general-------------------------------------------- */
+footer{
+    height: 7.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    div .redes{
+        display: inline-block;
+        background-color: rgb(51, 51, 51);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding: 19px;
+        margin-bottom: 10px;
+        transition: all .2s ease-in-out;
+    }
+    #instagram{
+        margin-right: 15px;
+        &:hover{
+            background-color: brown;
+            box-shadow: 0 0 20px rgba(167, 6, 6, 0.5);
+        }
+    }
+    #twitch{
+        margin-left: 15px;
+        &:hover{
+            background-color: rgb(52, 165, 42);
+            box-shadow: 0 0 20px rgba(52, 167, 6, 0.5);
+        }
+    }
+    #twitter:hover{
+        background-color: rgb(165, 163, 42);
+        box-shadow: 0 0 20px rgba(167, 156, 6, 0.5);
+    }
+ }
+ /* ------------------------------------------------------------------------------------------- */

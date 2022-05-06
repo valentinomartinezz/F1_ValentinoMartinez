@@ -1,0 +1,10 @@
+/* -------------------ESCUDERIAS-------------------------------------------- */
+/* -------------------Main--------------------------------------------------*/
+.accordion-item{
+    border: 1px solid rgb(99, 25, 25);
+    margin-bottom: 1rem;
+    background-color: rgb(172, 171, 171);
+}
+.accordion-button:not(.collapsed)::after{
+    filter: brightness(0%) invert(70%); 
+}

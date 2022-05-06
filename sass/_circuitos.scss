@@ -1,0 +1,44 @@
+/* -----------------CIRCUITOS--------------------------------------------- */
+/* -----------------MAIN ------------------------------------------------- */
+#circuitos__main{
+    padding: 1rem 0 0 0;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 3rem auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    section.main__contaner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .circuito{
+            color: white;
+            border: 1px solid rgb(206, 30, 30);
+            box-shadow: 0 0 20px rgba(27, 27, 27, 0.568);
+            width: 300px;
+            display: flex;
+            height: 200px;
+            margin-bottom: 10px;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            border-radius: 4%;
+            background-color: rgba(27, 27, 27, 0.568);
+        }
+    }
+}
+@media  (min-width: 667px){
+    #circuitos__main{
+        width: 62%;
+        row-gap: 15px;
+    }
+    .circuito{
+        width: 400px;
+        display: flex;
+        height: 300px;
+        font-size: 25px;
+    }    
+}

@@ -1,0 +1,83 @@
+/* -----------------------Header general--------------------------------------- */
+header{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 2, 2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    div img{
+        height: 145px;
+        width: 145px;
+    }
+    .logo{
+        background-color: rgb(226, 2, 2);
+    }
+    nav{
+        background-color: rgb(226, 2, 2);
+        flex-grow: 0.6;
+        ul li{
+            border-top: 2px groove gray;
+            border-width: 3px;
+            display: inline-block;
+            margin: 10px 10px;
+            padding: 5px 0px 0px 55px;
+            width: 200px;
+            height: 25px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: all .5s ease-in-out;
+            #escuderias:hover{
+                background-image: url('../fotos/auto.jpg');
+                background-size: cover;
+                background-position: center;
+                transform: (1.1);
+                border-top: 2px groove black;
+                margin: 10px 10px;
+                padding: 5px 0px 0px 55px;
+                width: 200px;
+                height: 25px;
+                box-shadow: 0 0 20px rgba(66, 66, 66, 0.568);
+            }
+            #circuitos:hover{
+                background-image: url('../fotos/circuito.jpg');
+                background-size: cover;
+                background-position: center;
+                transform: (5);
+                border-top: 2px groove black;
+                margin: 10px 10px;
+                padding: 5px 0px 0px 55px;
+                width: 200px;
+                height: 25px;
+                box-shadow: 0 0 20px rgba(66, 66, 66, 0.568);
+            }
+            #ranking:hover{
+                background-image: url('../fotos/pilotos.jpg');
+                background-size: cover;
+                background-position: center;
+                transform: (5);
+                border-top: 2px groove black;
+                margin: 10px 10px;
+                padding: 5px 0px 0px 55px;
+                width: 200px;
+                height: 25px;
+                box-shadow: 0 0 20px rgba(66, 66, 66, 0.568);
+            }
+            #home:hover{
+                background-image: url('../fotos/pit.jpg');
+                background-size: cover;
+                background-position: center;
+                
+                transform: (5);
+                border-top: 2px groove black;
+                margin: 10px 10px;
+                padding: 5px 0px 0px 55px;
+                width: 200px;
+                height: 25px;
+                box-shadow: 0 0 20px rgba(66, 66, 66, 0.568);
+            }
+        }
+    }
+ }
+ /* --------------------------------------------------------------------------------------------- */
