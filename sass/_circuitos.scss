@@ -15,18 +15,79 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         .circuito{
-            color: white;
+            color: rgb(56, 46, 46);
             border: 1px solid rgb(206, 30, 30);
-            box-shadow: 0 0 20px rgba(27, 27, 27, 0.568);
             width: 300px;
             display: flex;
             height: 200px;
             margin-bottom: 10px;
             justify-content: center;
             align-items: center;
-            font-size: 15px;
+            font-size: 35px;
+            -webkit-text-stroke: 0.5px rgb(255, 255, 255);
             border-radius: 4%;
             background-color: rgba(27, 27, 27, 0.568);
+            transition: all .2s ease-in-out;
+        }
+        article#c1{
+            background-image: url("../fotos/españa.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            &:hover{
+                background-color: rgb(71, 71, 71);
+                box-shadow: 0 0 20px rgb(68, 0, 0);
+            }
+        }
+        article#c2{
+            background-image: url("../fotos/canada.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            &:hover{
+                background-color: rgb(71, 71, 71);
+                box-shadow: 0 0 20px rgb(68, 0, 0);
+            }
+        }
+        article#c3{
+            background-image: url("../fotos/austria.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            &:hover{
+                background-color: rgb(71, 71, 71);
+                box-shadow: 0 0 20px rgb(68, 0, 0);
+            }
+        }
+        article#c4{
+            background-image: url("../fotos/brasil.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            &:hover{
+                background-color: rgb(71, 71, 71);
+                box-shadow: 0 0 20px rgb(68, 0, 0);
+            }
+        }
+        article#c5{
+            background-image: url("../fotos/mexico.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            &:hover{
+                background-color: rgb(71, 71, 71);
+                box-shadow: 0 0 20px rgb(68, 0, 0);
+            }
+        }
+        article#c6{
+            background-image: url("../fotos/italia.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            &:hover{
+                background-color: rgb(71, 71, 71);
+                box-shadow: 0 0 20px rgb(68, 0, 0);
+            }
         }
     }
 }

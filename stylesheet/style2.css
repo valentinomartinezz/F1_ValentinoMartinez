@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -416,18 +417,67 @@ section.home__info {
     flex-wrap: wrap;
     justify-content: space-evenly; }
     #circuitos__main section.main__contaner .circuito {
-      color: white;
+      color: #382e2e;
       border: 1px solid #ce1e1e;
-      box-shadow: 0 0 20px rgba(27, 27, 27, 0.568);
       width: 300px;
       display: flex;
       height: 200px;
       margin-bottom: 10px;
       justify-content: center;
       align-items: center;
-      font-size: 15px;
+      font-size: 35px;
+      -webkit-text-stroke: 0.5px white;
       border-radius: 4%;
-      background-color: rgba(27, 27, 27, 0.568); }
+      background-color: rgba(27, 27, 27, 0.568);
+      transition: all .2s ease-in-out; }
+    #circuitos__main section.main__contaner article#c1 {
+      background-image: url("../fotos/españa.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      #circuitos__main section.main__contaner article#c1:hover {
+        background-color: #474747;
+        box-shadow: 0 0 20px #440000; }
+    #circuitos__main section.main__contaner article#c2 {
+      background-image: url("../fotos/canada.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      #circuitos__main section.main__contaner article#c2:hover {
+        background-color: #474747;
+        box-shadow: 0 0 20px #440000; }
+    #circuitos__main section.main__contaner article#c3 {
+      background-image: url("../fotos/austria.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      #circuitos__main section.main__contaner article#c3:hover {
+        background-color: #474747;
+        box-shadow: 0 0 20px #440000; }
+    #circuitos__main section.main__contaner article#c4 {
+      background-image: url("../fotos/brasil.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      #circuitos__main section.main__contaner article#c4:hover {
+        background-color: #474747;
+        box-shadow: 0 0 20px #440000; }
+    #circuitos__main section.main__contaner article#c5 {
+      background-image: url("../fotos/mexico.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      #circuitos__main section.main__contaner article#c5:hover {
+        background-color: #474747;
+        box-shadow: 0 0 20px #440000; }
+    #circuitos__main section.main__contaner article#c6 {
+      background-image: url("../fotos/italia.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      #circuitos__main section.main__contaner article#c6:hover {
+        background-color: #474747;
+        box-shadow: 0 0 20px #440000; }
 
 @media (min-width: 667px) {
   #circuitos__main {
